@@ -207,8 +207,8 @@
               //    현재 슬라이드의 페이지버튼 자식요소인 이미지 src='경로/이미지' 속성변경
                 function pageEvent(){
                   // console.log( cnt );
-                  pageBtn                 .children().attr('src','./images/main_prom_off.png')
-                  pageBtn.eq(cnt==3?0:cnt).children().attr('src','./images/main_prom_on.png')
+                  pageBtn                 .children().attr('src','/images/main_prom_off.png')
+                  pageBtn.eq(cnt==3?0:cnt).children().attr('src','/images/main_prom_on.png')
 
                 }
 
@@ -232,13 +232,13 @@
                 // false 이면 없다.
 
                 function stopFn(){
-                  playBtn.children().attr('src','./images/main_prom_play.png');
+                  playBtn.children().attr('src','/images/main_prom_play.png');
                   playBtn.removeClass('on'); //삭제
                   // 슬라이드정지
                   clearInterval(setId);
                 }
                 function playFn(){
-                  playBtn.children().attr('src','./images/main_prom_stop.png');
+                  playBtn.children().attr('src','/images/main_prom_stop.png');
                   playBtn.addClass('on');  //꺼짐 클래스 추가
                   // 슬라이드플레이
                   autoTimer();
